@@ -184,7 +184,7 @@
             if (request.attachments && request.attachments.length > 0) {
                 attachmentsHtml = '<div><strong>Attachments:</strong><ul class="list-disc list-inside ml-4">';
                 request.attachments.forEach(attachment => {
-                    attachmentsHtml += `<li> <a href="/storage${attachment.path}"> ${attachment.original_name}</a> (${Math.round(attachment.size/1024)}KB)</li>`;
+                    attachmentsHtml += `<li> <a href="/storage/${attachment.path}"> ${attachment.original_name}</a> (${Math.round(attachment.size/1024)}KB)</li>`;
                 });
                 attachmentsHtml += '</ul></div>';
             }
